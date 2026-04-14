@@ -1,4 +1,4 @@
-const BASE = import.meta.env.VITE_BACKEND_URL || 'http://localhost:4000';
+const BASE = import.meta.env.VITE_BACKEND_URL || 'https://4038-182-176-108-166.ngrok-free.app';
 
 async function post(path, body) {
   const r = await fetch(BASE + path, {
