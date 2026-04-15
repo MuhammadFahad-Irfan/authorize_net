@@ -17,7 +17,8 @@ async function get(path) {
 }
 
 export const api = {
-  createInvoice: (amount, description) => post('/create-invoice', { amount, description }),
-  getPaymentToken: (invoiceId) => post('/get-payment-token', { invoiceId }),
+  getPaymentToken: ({ id, amount, description }) =>
+    post('/get-payment-token', { id, amount, description }),
   getInvoice: (id) => get(`/invoice/${id}`),
 };
+
