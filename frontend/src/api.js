@@ -1,4 +1,4 @@
-const BASE ='https://9d7a-182-176-108-166.ngrok-free.app/payment';
+const BASE ='https://9d7a-182-176-108-166.ngrok-free.app/api/v1/payment';
 
 async function post(path, body) {
   const r = await fetch(BASE + path, {
