@@ -87,7 +87,7 @@ export default function CreatePayment() {
     setError(null);
     setLoading(true);
     try {
-      const id = 'INV-273844f1-db05-4f4b-8930-7e6b0ea8873f';
+      const id = 'INV-1775473834057';
       const { token, invoiceId, paymentPageUrl } = await api.getPaymentToken({
         id,
         amount: Number(amount),
